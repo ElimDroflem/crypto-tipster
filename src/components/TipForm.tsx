@@ -10,25 +10,31 @@ export default function TipForm() {
       </CardHeader>
       <CardContent>
         <form className="space-y-4">
-          <Input
-            placeholder="Trading Pair (e.g., BTC/USDT)"
-            className="bg-gray-700 border-cyan-500"
-          />
-          <Input
-            placeholder="Entry Price"
-            className="bg-gray-700 border-cyan-500"
-          />
-          <Input
-            placeholder="Target Price"
-            className="bg-gray-700 border-cyan-500"
-          />
-          <Input
-            placeholder="Stop Loss"
-            className="bg-gray-700 border-cyan-500"
-          />
+          <div className="space-y-4">
+            <input
+              type="text"
+              placeholder="Trading Pair (e.g., BTC/USDT)"
+              className="w-full p-2 bg-gray-700 border-cyan-500 border rounded-md"
+            />
+            <input
+              type="text"
+              placeholder="Entry Price"
+              className="w-full p-2 bg-gray-700 border-cyan-500 border rounded-md"
+            />
+            <input
+              type="text"
+              placeholder="Target Price"
+              className="w-full p-2 bg-gray-700 border-cyan-500 border rounded-md"
+            />
+            <input
+              type="text"
+              placeholder="Stop Loss"
+              className="w-full p-2 bg-gray-700 border-cyan-500 border rounded-md"
+            />
+          </div>
           <textarea
             placeholder="Analysis and Reasoning"
-            className="w-full h-24 bg-gray-700 border-cyan-500 rounded-md p-2"
+            className="w-full h-24 bg-gray-700 border-cyan-500 border rounded-md p-2"
           ></textarea>
           <Button className="w-full bg-gradient-to-r from-purple-500 to-pink-500">
             Post Tip

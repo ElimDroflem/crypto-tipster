@@ -16,11 +16,16 @@ export default function RecentTips() {
           >
             <div className="flex items-center mb-2">
               <Avatar className="h-8 w-8 mr-2">
-                <AvatarImage src={`/placeholder.svg?height=32&width=32`} />
-                <AvatarFallback>UT</AvatarFallback>
+                <AvatarImage
+                  src={`https://api.dicebear.com/6.x/initials/svg?seed=User${tip}`}
+                  alt={`User${tip}`}
+                />
+                <AvatarFallback>U{tip}</AvatarFallback>
               </Avatar>
-              <span className="font-semibold text-pink-400">User{tip}</span>
-              <Badge className="ml-2 bg-gradient-to-r from-yellow-400 to-orange-500">
+              <span className="font-semibold text-pink-400 mr-2">
+                User{tip}
+              </span>
+              <Badge className="bg-gradient-to-r from-yellow-400 to-orange-500 text-xs px-2 py-1 rounded">
                 Pro Trader
               </Badge>
             </div>
